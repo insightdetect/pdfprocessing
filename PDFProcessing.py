@@ -5,8 +5,8 @@ from datetime import datetime
 import os
 
 # Paths
-input_pdf_path = r"E:\PDF_Processing\Denmaru_Assist_report_2025_08_07_20_19_20.pdf"
-output_pdf_path = r"E:\PDF_Processing\ProcessedPDF1.pdf"
+input_pdf_path = r"PDF Location"
+output_pdf_path = r"ProcessedPDFlocation"
 
 # Step 1: Extract table from PDF
 all_rows = []
@@ -150,3 +150,4 @@ print(df.head(10))  # Or grouped_df.head(10)
 print(df.shape)     # See row count
 HTML(string=full_html).write_pdf(output_pdf_path)
 print(f"[SUCCESS] Processed PDF saved at:\n{output_pdf_path}")
+
